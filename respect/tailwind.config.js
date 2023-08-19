@@ -3,10 +3,15 @@ module.exports = {
     './src/**/*.html',
     './src/**/*.js',
     './public/**/*.html',
-    './public/**/*.js'
+    './public/**/*.js',
+    './index.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans'],
+      },
+    },
   },
   plugins: [],
 }
