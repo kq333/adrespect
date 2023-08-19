@@ -5,5 +5,4 @@ export const instagramContent = [
         text: `Śledź nasze </br> najnowsze realizacje!`,
         btnText: 'Instagram',
     }
-    ];
-    
+];

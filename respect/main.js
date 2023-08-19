@@ -3,6 +3,7 @@ import { createNavbarMobile } from './public/js/navbar-mobile/navbarMobile'
 import { OffertaSection } from './public/js/offerta-section/offertaElem'
 import { aboutCompanySection } from './public/js/about-company-section/aboutCompanyElem'
 import { instagramBlockElem } from './public/js/instagram-block-section/instagramSectionElem'
+import { footerElem } from './public/js/footer-section/footerElem'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const getOfertaSection = document.querySelector('#section-offer');
   const getAboutCompanySection = document.querySelector('#section-about-company');
   const getInstagramSection = document.querySelector('#section-instagram-block');
+
+  const getFooterSection = document.querySelector('#footer');
+
 
 
   if (getNavbarElem) {
@@ -35,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     getInstagramSection.innerHTML = instagramBlockElem;
   } else {
     console.error("'instagram section' not found.");
+  }
+
+  if (getFooterSection) {
+    getFooterSection.innerHTML = footerElem;
+  } else {
+    console.error("'footer section' not found.");
   }
 
 
