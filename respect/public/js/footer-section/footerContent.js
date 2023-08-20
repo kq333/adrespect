@@ -11,6 +11,6 @@ export const footerContent = [
         email: 'giarddesign@kontakt.pl',
         copyright:'Prawa zastrzeżone © 2022',
         madeBy:'made by',
-        comapnyLogo: '../../icons/footer/logo-full-light.svg'
+        companyLogo: '../../icons/footer/logo-full-light.svg'
     }
 ]

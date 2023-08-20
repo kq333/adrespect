@@ -11,7 +11,7 @@ export const footerElem = footerContent.map(HTMLelem => {
           <div class="lg:flex block items-center md:justify-end gap-x-6">
             <div class="flex justify-center pt-[22px]">${HTMLelem.header}</div>
             <div class="flex justify-center pt-[22px]">
-              <button class="bg-[#1B5B31] pt-[12px] pl-[12px] pr-[12px] pb-[14px] border-[#1B5B31] rounded-full">
+              <button class="bg-[#1B5B31] pt-[12px] pl-[12px] pr-[12px] pb-[14px] border-[#1B5B31] rounded-full hover:opacity-50">
                 ${HTMLelem.headerBtnText}
               </button>
             </div>
@@ -39,7 +39,7 @@ export const footerElem = footerContent.map(HTMLelem => {
           <div class="flex flex-col justify-end">
             <div class="flex sm:gap-x-4 gap-x-1 items-center sm:justify-start  justify-center py-2">
               ${HTMLelem.madeBy}
-              <img src="${HTMLelem.comapnyLogo}" alt="logo">
+              <img src="${HTMLelem.companyLogo}" alt="logo">
             </div>
           </div>
         </div>
