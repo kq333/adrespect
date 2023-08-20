@@ -17,7 +17,7 @@ export const aboutCompanySection = aboutCompanyContent.map(HTMLelem => {
           <p class="text-base py-10 tracking-tighter">${HTMLelem.text}</p>
 
           <div class="pt-[72px]">
-            <button class="flex pt-4 pr-5 pb-4 pl-6 items-center rounded-3xl border-2 border-[#F5F0EC]">
+            <button class="flex pt-4 pr-5 pb-4 pl-6 items-center rounded-full border-2 border-[#F5F0EC] hover:opacity-50">
               ${HTMLelem.btnText}
               <img src="${HTMLelem.btnIcon}" alt="arrow image" class="pl-2">
             </button>

@@ -16,7 +16,7 @@ export const instagramBlockElem = instagramContent.map(HTMLelem => {
             </h3>
           </div>
           <div class="py-3">
-            <button class="bg-[#F5F0EC] text-[#1B5B31] pt-[10px] pl-6 pr-[24px] pb-3 border rounded-full">
+            <button class="bg-[#F5F0EC] text-[#1B5B31] pt-[10px] pl-6 pr-[24px] pb-3 border rounded-full hover:opacity-50">
               ${HTMLelem.btnText}
             </button>
           </div>
