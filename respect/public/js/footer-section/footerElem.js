@@ -34,7 +34,7 @@ export const footerElem = footerContent.map(HTMLelem => {
             </div>
           </div>
         </div>
-        <div class="sm:flex block items-center justify-between sm:pt-[120px] py-12 text-xs md:text-base ">
+        <div class="sm:flex block items-center justify-between sm:pt-[104px]  text-xs md:text-base ">
           <div class="flex gap-x-12 justify-center">${HTMLelem.copyright}</div>
           <div class="flex flex-col justify-end">
             <div class="flex sm:gap-x-4 gap-x-1 items-center sm:justify-start  justify-center py-2">
