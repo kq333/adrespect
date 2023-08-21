@@ -75,3 +75,23 @@
     animation: menu-animation 1s;
   }
 }
+
+
+@layer components {
+
+  @keyframes slideshow {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+.animate-fade-in-out {
+  animation: slideshow 1.5s ease-in-out;
+}
+
+
+}
