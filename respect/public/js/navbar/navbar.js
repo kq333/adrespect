@@ -38,7 +38,7 @@ export function createNavbar() {
         const spanElem = document.createElement('span');
 
         const menuItemLogo = document.createElement('img');
-        spanElem.classList.add('flex', 'pl-1');
+        spanElem.classList.add('flex', 'pl-1', 'z-50');
 
         spanElem.appendChild(menuItemLogo);
         menuItemLogo.src = menuItem.logo;
@@ -52,6 +52,8 @@ export function createNavbar() {
 
           if (submenu.style.display === 'block') {
             submenu.style.position = 'absolute';
+            submenu.style.zIndex = '20';
+            submenu.style.color = 'white';
             submenu.style.paddingTop = '30px';
             submenu.classList.add('animate-roll-down');
           } else {

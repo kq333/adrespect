@@ -93,7 +93,7 @@ function createOpenMenu() {
   const createElem = document.createElement('div');
   createElem.id = 'mobile-menu-wrapper';
 
-  createElem.classList.add('h-full', 'w-full', 'bg-slate-500', 'fixed', 'top-0', 'z-10', 'md:hidden');
+  createElem.classList.add('h-full', 'w-full', 'bg-slate-200', 'fixed', 'top-0', 'z-10', 'md:hidden');
   createElem.classList.add('slider');
 
 
