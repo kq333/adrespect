@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  (async () => {
+   const macyRun = async () => {
     const getGallerySection = document.querySelector('#section-gallery');
     if (!getGallerySection) {
       console.error("'gallery' element not found.");
@@ -86,7 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     macy.run();
-  })();
+  };
+
+  macyRun();
+
 
 setTimeout(() => {
 
@@ -96,37 +99,20 @@ setTimeout(() => {
   const heightValue = /height:\s*([^;]+)/.exec(inlineStyle);
   const getStartHeight = heightValue[1];
 
-
   const getGalleryGradient = document.querySelector('#gallery-gradient');
   const getOpenGallery = document.querySelector('#open-gallery');
-
-
-
-  const windowWidth = window.innerWidth;
-  console.log(`Window width: ${windowWidth}px`);
-
- /*  getImageGrid.classList.remove('!h-[1430px]')
-  getImageGrid.style.heigh = '' */
-
-
-console.log(getImageGrid)
 
   openGallery(getOpenGallery, getGalleryGradient, getImageGrid, getStartHeight)
 
 }, 700);
 
 
-
 const getBtnSliders = document.querySelectorAll('#slider-btn button');
-
-getBtnSliders.forEach(button => {
+  getBtnSliders.forEach(button => {
     button.addEventListener('click', () => {
         const dataName = button.getAttribute('data-name');
         caruselEngine(dataName)
     });
 });
-
-
-
 
 });

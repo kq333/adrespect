@@ -2,96 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   html {
     font-family: Montserrat, 'Inter', 'system-ui', 'sans-serif';
   }
 }
 
-
-@layer components {
-    .search-input-wrapper {
-        @apply relative overflow-hidden transition-all duration-700 ease-linear;
-        width: 0;
-    }
-
-    @keyframes slideIn {
-        from {
-          width: 0;
-        }
-        to {
-          width: 250px;
-        }
-    }
-
-    .search-input-open {
-        width: 250px;
-    }
-    .submenu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-      }
-
-      .submenu.open {
-        max-height: 300px;
-      }
+.search-input-wrapper {
+  @apply relative overflow-hidden transition-all duration-700 ease-linear;
+  width: 0;
 }
 
-@layer components {
-
-  @keyframes roll-down {
-    from {
-      transform: translateY(-10px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes slideIn {
+  from {
+    width: 0;
   }
-
-  .animate-roll-down {
-    animation: roll-down 2s ease-out forwards;
+  to {
+    width: 180px;
   }
 }
 
+.search-input-open {
+  width: 230px;
+}
 
-@layer components {
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
 
-  @keyframes menu-animation {
-    0% {
-      left: 100vh;
-      left: 100vw;
-    }
+.submenu.open {
+  max-height: 300px;
+}
 
-    100% {
-      left: 0;
-    }
+@keyframes roll-down {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
   }
-
-  .slider {
-    animation: menu-animation 1s;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
+.animate-roll-down {
+  animation: roll-down 2s ease-out forwards;
+}
 
-@layer components {
+@keyframes menu-animation {
+  0% {
+    left: 100vh;
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
 
-  @keyframes slideshow {
-    0% {
-      opacity: 0;
-    }
+.slider {
+  animation: menu-animation 1s;
+}
 
-    100% {
-      opacity: 1;
-    }
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animate-fade-in-out {
   animation: slideshow 1.5s ease-in-out;
 }
 
-
+.animate-dropdown {
+  transition: all 0.5s ease-in-out;
 }

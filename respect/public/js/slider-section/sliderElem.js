@@ -1,6 +1,7 @@
 import { sliderContent } from '../slider-section/sliderContent';
 
 export const sliderElem = sliderContent.map(HTMLelem => {
+
   return `
   <div class="gap-x-16 bg-[#DCC1AB] xl:flex flex-1">
   <div class="max-w-[688px]">
@@ -30,7 +31,7 @@ export const sliderElem = sliderContent.map(HTMLelem => {
   <div class="relative xl:w-[688px] w-full">
     <div id="slider-image-content" class="md:h-[637px] md:w-[496px] overflow-hidden">
       <div class="h-[691px] md:w-full" id="slider-image-content">
-        <img class="xl:h-[95%] xl:w-[88%] h-full w-full object-fill absolute" src="./public/icons/about-company-image/PhotoAboutCompany.png" alt="image">
+        <img class="xl:h-[95%] xl:w-[88%] h-full w-full object-fill absolute" src="icons/about-company-image/PhotoAboutCompany.png" alt="image">
       </div>
     </div>
 
