@@ -5,14 +5,14 @@ export const sliderElem = sliderContent.map(HTMLelem => {
   <div class="gap-x-16 bg-[#DCC1AB] xl:flex flex-1">
   <div class="max-w-[688px]">
     <div class="pt-[144px] pl-[45px] pr-[45px]">
-      <h2 class="md:text-6xl text-3xl font-monserrat font-medium">
+      <h2 class="md:text-6xl text-3xl font-monserrat font-medium ">
         ${HTMLelem.header}
       </h2>
-      <p class="text-base font-inter pt-[44px]">
+      <p class="text-base font-inter pt-[44px] max-w-[489px]">
         ${HTMLelem.text}
       </p>
     </div>
-    <div class="py-18 pt-[72px] pb-[144px] pl-[45px] w-[688px] block md:flex gap-x-9">
+    <div class="py-18 pt-[72px] pb-[144px] pl-[45px] md:w-[688px]  block md:flex gap-x-9">
       <button class="bg-[#1B5B31] pt-[12px] pl-[24px] pr-[24px] pb-[14px] border-[#1B5B31] rounded-full hover:opacity-50 text-[#F5F0EC] mb-[30px] md:mb-0">
         ${HTMLelem.btnText}
       </button>
@@ -28,7 +28,7 @@ export const sliderElem = sliderContent.map(HTMLelem => {
   </div>
 
   <div class="relative xl:w-[688px] w-full">
-    <div id="slider-image-content" class="md:h-[737px] md:w-[496px] overflow-hidden">
+    <div id="slider-image-content" class="md:h-[637px] md:w-[496px] overflow-hidden">
       <div class="h-[691px] md:w-full" id="slider-image-content">
         <img class="xl:h-[95%] xl:w-[88%] h-full w-full object-fill absolute" src="./public/icons/about-company-image/PhotoAboutCompany.png" alt="image">
       </div>
@@ -46,6 +46,7 @@ export const sliderElem = sliderContent.map(HTMLelem => {
     </div>
   </div>
 </div>
+
 
   `;
 });
